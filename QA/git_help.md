@@ -23,7 +23,7 @@ git clone git@github.com:nineis7/before_guaduation.git
 5. 当一天学习完毕，通过以下步骤上传至远程仓库
 ```
 git status  #查询状态，红色表示本地修改未同步至远端服务器
-git add .
+git add .   #这一步需要在before_graduation文件夹执行，在哪个文件夹只能更新该文件夹内容
 git commit -m "Here is my comment"
 git remote add master git@github.com:nineis7/before_guaduation.git  #仅第一次需要，创建master分支
 git push master
@@ -33,3 +33,16 @@ git push master
 ```
 git pull
 ```
+
+**注意事项：**
+当两人同时对一处文本中内容进行修改并上传时（比如同时在晚上上传本地仓库，并且今天都对Chatter.md进行过修改），会造成冲突，先上传的一方不会有任何问题，上传的一方需通过
+```
+git pull
+```
+更新本地仓库后，对冲突地方进行审查，修改至合适时再上传。
+
+由于分布与异步的特性，我将文件夹修改至双人份，各自维护各自的工作区，其他共享区域一起维护，这样比较便捷一些。
+
+2022.4.4 version 0.1
+---
+
