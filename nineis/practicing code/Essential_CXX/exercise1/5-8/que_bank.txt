@@ -1,0 +1,6 @@
+fibonacci 1 2 3
+lucas 3 4 7
+pell 2 5 12
+triangular 3 6 10
+square 4 9 16
+pentagonal 5 12 22

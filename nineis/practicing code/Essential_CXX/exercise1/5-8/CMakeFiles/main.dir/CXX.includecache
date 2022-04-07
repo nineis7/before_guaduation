@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/shans/Desktop/theFirstStage/practicing code/Essential_CXX/exercise1/5-8/EnumParse.hpp
+string
+-
+map
+-
+
+/mnt/c/Users/shans/Desktop/theFirstStage/practicing code/Essential_CXX/exercise1/5-8/GNSystem.hpp
+iostream
+-
+vector
+-
+fstream
+-
+cstdlib
+-
+
+/mnt/c/Users/shans/Desktop/theFirstStage/practicing code/Essential_CXX/exercise1/5-8/main.cpp
+GNSystem.hpp
+/mnt/c/Users/shans/Desktop/theFirstStage/practicing code/Essential_CXX/exercise1/5-8/GNSystem.hpp
+EnumParse.hpp
+/mnt/c/Users/shans/Desktop/theFirstStage/practicing code/Essential_CXX/exercise1/5-8/EnumParse.hpp
+

@@ -1,0 +1,11 @@
+{
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "aiXcoder.showTrayIcon": true,
+    "files.associations": {
+        "vector": "cpp",
+        "iostream": "cpp",
+        "list": "cpp",
+        "algorithm": "cpp",
+        "string": "cpp"
+    }
+}

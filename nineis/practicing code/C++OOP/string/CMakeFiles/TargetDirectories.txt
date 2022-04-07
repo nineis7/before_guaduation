@@ -1,0 +1,3 @@
+/mnt/c/Users/shans/Desktop/CPP/C++OOP/string/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/shans/Desktop/CPP/C++OOP/string/CMakeFiles/edit_cache.dir
+/mnt/c/Users/shans/Desktop/CPP/C++OOP/string/CMakeFiles/main.dir

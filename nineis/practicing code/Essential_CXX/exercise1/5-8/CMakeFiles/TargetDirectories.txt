@@ -1,0 +1,3 @@
+/mnt/c/Users/shans/Desktop/theFirstStage/practicing code/Essential_CXX/exercise1/5-8/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/shans/Desktop/theFirstStage/practicing code/Essential_CXX/exercise1/5-8/CMakeFiles/edit_cache.dir
+/mnt/c/Users/shans/Desktop/theFirstStage/practicing code/Essential_CXX/exercise1/5-8/CMakeFiles/main.dir

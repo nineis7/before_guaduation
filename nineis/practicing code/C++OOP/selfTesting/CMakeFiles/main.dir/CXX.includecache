@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/shans/Desktop/CPP/C++OOP/selfTesting/complex.cpp
+complex.hpp
+/mnt/c/Users/shans/Desktop/CPP/C++OOP/selfTesting/complex.hpp
+
+/mnt/c/Users/shans/Desktop/CPP/C++OOP/selfTesting/complex.hpp
+iostream
+-
+
+/mnt/c/Users/shans/Desktop/CPP/C++OOP/selfTesting/main.cpp
+complex.hpp
+/mnt/c/Users/shans/Desktop/CPP/C++OOP/selfTesting/complex.hpp
+

@@ -28,6 +28,7 @@ git commit -m "Here is my comment"
 git remote add master git@github.com:nineis7/before_guaduation.git  #仅第一次需要，创建master分支
 git push master
 ```
+注意：只创建空文件夹并不会将其上传至repo，必须其内部要有内容。
 
 6. 第二天将新仓库更新至本地仓库（当其他朋友有所修改）
 ```
