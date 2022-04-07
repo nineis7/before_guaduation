@@ -18,6 +18,7 @@
 
 ### Timeline 建设ing
 
-- [ ] 4.5 repo finished
-- [ ] 4.6 schedule begins
+- [x] 4.5 repo finished
+- [x] 4.6 schedule begins
+- [x] 4.7 update some praciticing C++ codes and the book Essential C++ and so on. 
 
