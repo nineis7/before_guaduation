@@ -1,0 +1,5 @@
+[1] Zou H, Yang J, Das H P, et al. WiFi and Vision Multimodal Learning for Accurate and Robust Device-Free Human Activity Recognition[C]. In: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2019:1-8.
+[2] Chao Y W, Vijayanarasimhan S, Seybold B, et al. Rethinking the Faster R-CNN Architecture for Temporal Action Localization[C]. In: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2018: 1-8.
+[3] Wang C, Chen S, Yang Y, Hu F, Liu F, and Wu J. Literature Review on Wireless Sensing—Wi-Fi Signal-Based Recognition of Human Activities[J]. Tsinghua Science and Technology, 2018: 203-222.
+[4] Buch S, Escorcia V, Ghanem B, Li F F, and Niebles J C. End-to-end, single-stream temporal action detection in untrimmed videos[C]. In: The British Machine Vision Conference, 2017: 2-7.
+[5] Girshick R, Donahue J, Darrell T, et al. Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation[C]. In: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2014: 1-8.
