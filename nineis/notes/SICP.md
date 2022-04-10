@@ -1,6 +1,6 @@
 # SCIP course notes
---------
 
+![SCIP_cover](./pics/SCIP_cover.png)
 This plan gonna begin in 4.9 and each day for a part
 
 ## Lec1a: Lisp概览 Time 2022 4.9
@@ -74,6 +74,9 @@ kinds of expressions
     - conditions
     - combinations
 
+
+### part2
+
 **the difference between interation and recursion** 
 
 ```
@@ -109,9 +112,37 @@ it's easy to recognize that 1st med is an iteration approach and 2nd med is a re
 ```
 
 
-Notes:
-interation only changes the arguments each part \n
+Notes:  
+1. interation only changes the arguments each part  
     while recursion not only changes the arguments but also changes the shape each part returns
+2. 1st complexity analyze : Time complexity O(x) | Space complexity O(1)  
+   2nd complexity analyze : Time complexity O(x) | Space complexity O(x)
+
+
+### part3
+
+fib square
+![Fib_tree](./pics/fib_tree.png)
+
+time = O(fib(x))  
+space = O(n)
+
+
+Q after-class : How to write one using iteration approach?
+
+``` Lisp
+A: 2022 4.10
+    (define (fib N x y)
+        (if (= N 2)
+            y
+            (fib (-1+ N) y (+ x y))))
+
+->  (fib 4 0 1)
+    (fib 3 1 2)
+    (fib 2 2 3)
+    -> 3
+```
+
 
 
 
