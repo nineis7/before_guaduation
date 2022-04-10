@@ -1,7 +1,21 @@
 # SICP course notes
-
 ![SICP_cover](./pics/SICP_cover.png)
 This plan gonna begin in 4.9 and each day for a part
+
+
+<!-- vim-markdown-toc Marked -->
+
+* [Lec1a: Lisp概览 Time 2022 4.9](#lec1a:-lisp概览-time-2022-4.9)
+    * [Part1 technique for controlling complexity](#part1-technique-for-controlling-complexity)
+    * [Part2 General framework](#part2-general-framework)
+* [Lec1b: 计算过程 Time 2022 4.10](#lec1b:-计算过程-time-2022-4.10)
+    * [part1](#part1)
+    * [part2](#part2)
+    * [part3](#part3)
+
+<!-- vim-markdown-toc -->
+
+
 
 ## Lec1a: Lisp概览 Time 2022 4.9
 
