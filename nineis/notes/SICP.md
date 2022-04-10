@@ -1,6 +1,6 @@
-# SCIP course notes
+# SICP course notes
 
-![SCIP_cover](./pics/SCIP_cover.png)
+![SICP_cover](./pics/SICP_cover.png)
 This plan gonna begin in 4.9 and each day for a part
 
 ## Lec1a: Lisp概览 Time 2022 4.9
