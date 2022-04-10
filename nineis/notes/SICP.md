@@ -76,6 +76,7 @@ kinds of expressions
 
 **the difference between interation and recursion** 
 
+```
 example: add x and y  
         1st definition method -> (define (+ x y)  
                                     (if (= x 0)  
@@ -86,10 +87,30 @@ example: add x and y
                                         y  
                                         (1+ (+ (-1+ x) y))))  
                     
-
+```
 different shape as follows:
+```Lisp
+(+ 3 4)
+ 1st def_med -> (+ 3 4)  
+                (+ 2 5)
+                (+ 1 6)
+                (+ 0 7)
+                -> 7
+ 2nd def_med -> (+ 3 4)
+                (1+ (+ 2 4))
+                (1+ (1+ (+ 1 4)))
+                (1+ (1+ (1+ (+ 0 4))))
+                (1+ (1+ (1+ 4)))
+                (1+ (1+ 5))
+                (1+ 6)
+                -> 7
 
-interation only changes the arguments each part 
+it's easy to recognize that 1st med is an iteration approach and 2nd med is a recursion approach.
+```
+
+
+Notes:
+interation only changes the arguments each part \n
     while recursion not only changes the arguments but also changes the shape each part returns
 
 
