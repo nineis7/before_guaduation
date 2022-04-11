@@ -12,6 +12,8 @@ This plan gonna begin in 4.9 and each day for a part
     * [part1](#part1)
     * [part2](#part2)
     * [part3](#part3)
+* [Lec2A 2022 4.11](#lec2a-2022-4.11)
+    * [part1](#part1)
 
 <!-- vim-markdown-toc -->
 
@@ -135,8 +137,17 @@ Notes:
 
 ### part3
 
+![preface](./pics/preface.png)
+
 fib square
 ![Fib_tree](./pics/fib_tree.png)
+
+``` Lisp
+    (define (fib N)
+        (if (< N 2)
+            N
+            (+ (fib (- N 1)) (fib (- N 2)))))
+```
 
 time = O(fib(x))  
 space = O(n)
@@ -145,9 +156,9 @@ space = O(n)
 Q after-class : How to write one using iteration approach?
 
 ``` Lisp
-A: 2022 4.10
+A1: 2022 4.10
     (define (fib N x y)
-        (if (= N 2)
+        (if (< N 3)
             y
             (fib (-1+ N) y (+ x y))))
 
@@ -155,8 +166,60 @@ A: 2022 4.10
     (fib 3 1 2)
     (fib 2 2 3)
     -> 3
+    
+A2: 2022 4.11 another recursion approach
+    (define (fib N x y)
+        (if (< N 3)
+            y
+            (+ x (fib (-1+ N y (+ x y))))))
 ```
 
 
+## Lec2A 2022 4.11
 
+### part1
+
+higher-order procedure : seeing procedure as a parameter
+
+``` 
+(define (sum term A next B)
+    (if (> A B)
+        0
+        (+ (term A)
+           (sum term
+                (next A)
+                next
+                B))))
+                
+instantiation 1:
+(define (sum-int A B)
+    (define (identity x) x)
+    (sum identity
+         A
+         1+
+         B))
+
+Note: identity as term, (define (identity x) x) is just to not change the value of A and output A
+
+instantiation 2:
+(define (sum-sq A B)
+    (sum square
+         A
+         1+
+         B))
+
+
+instantiation 3:
+(define (pi-sum A B)
+    (sum (Lambda(i) (/ 1 (* i (+ i 2))))
+         A
+         (Lambda(i) (+ i 4))
+         B))
+```
+
+![NotePic411](./pics/NotePic1.png)
+
+![pic1](./pics/lec31.PNG) 
+
+![pic2](./pics/lec32.PNG) 
 
