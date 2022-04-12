@@ -14,6 +14,7 @@ This plan gonna begin in 4.9 and each day for a part
     * [part3](#part3)
 * [Lec2A 2022 4.11](#lec2a-2022-4.11)
     * [part1](#part1)
+* [Lec2B 2022 4.12](#lec2b-2022-4.12)
 
 <!-- vim-markdown-toc -->
 
@@ -222,4 +223,52 @@ instantiation 3:
 ![pic1](./pics/lec31.PNG) 
 
 ![pic2](./pics/lec32.PNG) 
+
+
+
+## Lec2B 2022 4.12
+
+compounded data
+
+**box and pointer notation** 
+
+```
+(define (make-rat N D)
+    (cons N D))
+    
+(define (numer x) (car x))
+(define (denom x) (cdr x))
+
+
+```
+
+数据抽象的意义： 推迟决定。  
+用于保持系统弹性，在被迫具体的实现前不做出任何决定，与此同时还能有进展，而不被具体的操作局限。  
+用名字代表期望运作的结果，继续编程，直到我们最终的确获得了最终结果
+
+- closure:闭包 组合之组合，元素之元素 [俄罗斯套娃成立性]
+- **道生一，一生二，二生三，三生万物。** 
+- **面向接口而不是实现**
+- 数据结构本身也是过程
+    ```
+    (define (cons a b)
+        (lambda (pick)
+            (cond ((= pick 1) a)
+                  ((= pick 2) b))))
+    
+    (define (car x) (x 1))
+    (define (cdr x) (x 2))
+                  
+    ```
+
+blur the line between what's data and what's a procedure
+
+Q1: 过程是一个实体，它限制规定了操作的边界，对指定的数，由于模糊了数据和过程的边界，那么作为数据其独立的特征便会被过程继承过去，而过程本身是具备通用性的，
+故其中存在个性与共性的辩证性。
+Q2: 一次调用(cons 3 4)，之后再调用一次，两次调用的过程是否是同一个过程？
+
+![cloud](./pics/cloud.PNG) 
+
+![abs](./pics/abs.PNG) 
+
 
