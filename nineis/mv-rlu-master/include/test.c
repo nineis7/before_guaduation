@@ -15,7 +15,8 @@ float time_diff(struct timeval *start, struct timeval *end)
 //线程函数
 void *test(void *ptr)
 {
-    for(int i=0; i < 100000; ++i){
+    wait(10);
+    for(int i=0; i < 1000000000; ++i){
         struct timeval start;
         gettimeofday(&start, NULL);
 
@@ -27,7 +28,7 @@ int main(void)
 {
 	struct timeval start;
     gettimeofday(&start, NULL);
-    for(int i=0; i < 16000; ++i){
+    for(int i=0; i < 24; ++i){
         pthread_t pId;
     	int ret;
     	//创建子线程，线程id为pId
