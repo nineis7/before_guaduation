@@ -1,11 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <pthread.h>
+#include <thread>
 #include <unistd.h>
 #include "ordo_clock.h"
 #include <time.h>
 #include <sys/time.h>
+#include <mutex>
+#include <condition_variable>
+#include <iostream>
 
+using namespace std;
+mutex mu;							//互斥锁全局变量
+condition_variable cond;           //全局条件变量
 
 float time_diff(struct timeval *start, struct timeval *end)
 {
@@ -15,12 +21,23 @@ float time_diff(struct timeval *start, struct timeval *end)
 //线程函数
 void *test(void *ptr)
 {
-    wait(10);
-    for(int i=0; i < 1000000000; ++i){
-        struct timeval start;
-        gettimeofday(&start, NULL);
-
+    static int count = 24;
+    if(count > 0){
+        std::unique_lock<std::mutex> locker(mu);
+        count--;
     }
+   else {
+        cond.notify_all();
+    }
+    ordo_clock_init();
+    size_t time;
+    size_t count_t(0);
+    for(int i=0; i < 1e-9; ++i){
+        time = ordo_get_clock();
+        time--;
+        count_t++;
+    }
+    cout << "Test_ordo finished! And the time and count time is " << time << count_t << endl;    
 }
 
 
